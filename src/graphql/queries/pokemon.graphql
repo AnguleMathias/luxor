@@ -1,0 +1,13 @@
+# import '/fragments/pokemons.graphql'
+
+query pokemons($first: Int!) {
+  pokemons(first: $first) {
+    ...pokemons
+  }
+}
+
+query pokemon($id: String, $name: String) {
+  pokemon(id: $id, name: $name) {
+    ...pokemons
+  }
+}

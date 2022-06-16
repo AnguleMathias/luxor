@@ -1,0 +1,41 @@
+fragment pokemons on Pokemon {
+  id
+  classification
+  fleeRate
+  image
+  maxCP
+  maxHP
+  name
+  number
+  resistant
+  types
+  attacks {
+    fast {
+      name
+      type
+      damage
+    }
+    special {
+      name
+      type
+      damage
+    }
+  }
+  evolutions {
+    id
+    fleeRate
+    name
+  }
+  evolutionRequirements {
+    name
+    amount
+  }
+  height {
+    minimum
+    maximum
+  }
+  weight {
+    minimum
+    maximum
+  }
+}
